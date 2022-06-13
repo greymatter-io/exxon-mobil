@@ -1,0 +1,1 @@
+kubectl create secret generic elasticsearch-password -n vector --from-literal=password=ELASTICSEARCH_PASSWORD
