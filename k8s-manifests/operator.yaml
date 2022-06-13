@@ -163,7 +163,7 @@ spec:
         runAsNonRoot: true
         fsGroup: 1000
       containers:
-        - image: docker.greymatter.io/internal/gm-operator:latest
+        - image: quay.io/greymatterio/operator:latest
           name: operator
           command:
             - /app/operator
@@ -172,8 +172,6 @@ spec:
             - git@github.com:greymatter-io/gitops-core.git
             - -sshPrivateKeyPath
             - /app/.ssh/id_ed25519
-            - -sshPrivateKeyPassword
-            - ZcPLL5(+
             - -branch
             - update-mesh-upon-changes
           ports:
