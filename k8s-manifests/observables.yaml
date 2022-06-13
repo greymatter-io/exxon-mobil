@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   labels:
     app: observables
-    greymatter.io/cluster: observables
   name: observables
   namespace: plus
 spec:
@@ -11,16 +10,14 @@ spec:
   selector:
     matchLabels:
       app: observables
-      greymatter.io/cluster: observables
   template:
     metadata:
       labels:
         app: observables
-        greymatter.io/cluster: observables
     spec:
       containers:
         - name: service
-          image: docker.greymatter.io/internal/observables-app:latest
+          image: quay.io/observables:0.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
