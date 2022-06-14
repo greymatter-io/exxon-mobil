@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: quay.io/observables:0.0.1
+          image: quay.io/greymatterio/observables:0.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
