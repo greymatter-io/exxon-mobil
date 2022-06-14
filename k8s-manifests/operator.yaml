@@ -173,7 +173,7 @@ spec:
             - -sshPrivateKeyPath
             - /app/.ssh/id_ed25519
             - -branch
-            - update-mesh-upon-changes
+            - main
           ports:
             - containerPort: 9443
               name: webhook-server
