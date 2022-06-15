@@ -1,0 +1,11 @@
+[api]
+host = "http://127.0.0.1:5555"
+use_tls = false
+zone_name = "default-zone"
+insecure = true
+
+[catalog]
+host = "http://127.0.0.1:8080"
+use_tls = false
+zone_name = "default-zone"
+insecure = true
