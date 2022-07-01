@@ -1,5 +1,6 @@
 # ExxonMobil Resources
 
-This repository contains resources for ExxonMobil to get started with Grey Matter.
+This repository contains resources for ExxonMobil to get started with greymatter.io.
 
-[k8s manifests](./k8s-manifests/) - Kubernetes manifests used during installation
+[config](./config/) - greymatter.io CLI configuration
+[manifests](./manifests/) - Kubernetes manifests used during installation
