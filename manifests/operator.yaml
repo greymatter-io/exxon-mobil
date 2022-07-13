@@ -39,10 +39,10 @@ spec:
           description: Mesh defines a Grey Matter mesh's desired state and describes its observed state.
           properties:
             apiVersion:
-              description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+              description: "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources"
               type: string
             kind:
-              description: 'Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+              description: "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
               type: string
             metadata:
               type: object
@@ -164,7 +164,7 @@ spec:
             - -repo
             - git@github.com:your-org/gitops-core.git
             - -sshPrivateKeyPath
-            - /app/.ssh/id_ed25519
+            - /app/.ssh/ssh_private_key
             - -branch
             - main
           ports:
@@ -565,4 +565,3 @@ webhooks:
     sideEffects: None
 kind: ValidatingWebhookConfiguration
 apiVersion: admissionregistration.k8s.io/v1
-
