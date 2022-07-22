@@ -156,7 +156,7 @@ spec:
         runAsNonRoot: true
         fsGroup: 1000
       containers:
-        - image: quay.io/greymatterio/operator:0.9.1
+        - image: quay.io/greymatterio/operator:0.9.2
           name: operator
           command:
             - /app/operator
